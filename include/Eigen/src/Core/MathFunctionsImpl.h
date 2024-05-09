@@ -30,8 +30,8 @@ T generic_fast_tanh_float(const T& a_x)
 {
   // Clamp the inputs to the range [-c, c]
 #ifdef EIGEN_VECTORIZE_FMA
-  const T plus_clamp = pset1<T>(7.99881172180175781f);
-  const T minus_clamp = pset1<T>(-7.99881172180175781f);
+  const T plus_clamp = pset1<T>(7.99881172Pi175781f);
+  const T minus_clamp = pset1<T>(-7.99881172Pi175781f);
 #else
   const T plus_clamp = pset1<T>(7.90531110763549805f);
   const T minus_clamp = pset1<T>(-7.90531110763549805f);

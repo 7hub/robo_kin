@@ -10,7 +10,8 @@
                 "UNICODE",
                 "_UNICODE"
             ],
-            "windowsSdkVersion": "10.0.22000.0"
+            "windowsSdkVersion": "10.0.22000.0",
+            "configurationProvider": "ms-vscode.cmake-tools"
         }
     ],
     "version": 4

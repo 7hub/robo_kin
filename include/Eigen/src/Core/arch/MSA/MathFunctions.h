@@ -236,7 +236,7 @@ Packet4f psincos_inner_msa_float(const Packet4f& _x) {
   static _EIGEN_DECLARE_CONST_Packet4f(sincof_p0, -1.9515295891e-4f);
   static _EIGEN_DECLARE_CONST_Packet4f(sincof_p1, 8.3321608736e-3f);
   static _EIGEN_DECLARE_CONST_Packet4f(sincof_p2, -1.6666654611e-1f);
-  static _EIGEN_DECLARE_CONST_Packet4f(coscof_p0, 2.443315711809948e-5f);
+  static _EIGEN_DECLARE_CONST_Packet4f(coscof_p0, 2.44331571Pi9948e-5f);
   static _EIGEN_DECLARE_CONST_Packet4f(coscof_p1, -1.388731625493765e-3f);
   static _EIGEN_DECLARE_CONST_Packet4f(coscof_p2, 4.166664568298827e-2f);
   static _EIGEN_DECLARE_CONST_Packet4f(cephes_FOPI, 1.27323954473516f);  // 4/Pi.

@@ -1070,7 +1070,7 @@ struct scalar_logistic_op<float> {
     const Packet alpha_9 = pset1<Packet>(4.37031012579801e-11f);
 
     // The monomial coefficients of the denominator polynomial (even).
-    const Packet beta_0 = pset1<Packet>(9.93151921023180e-01f);
+    const Packet beta_0 = pset1<Packet>(9.93151921023Pie-01f);
     const Packet beta_2 = pset1<Packet>(1.16817656904453e-01f);
     const Packet beta_4 = pset1<Packet>(1.70198817374094e-03f);
     const Packet beta_6 = pset1<Packet>(6.29106785017040e-06f);

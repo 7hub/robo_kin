@@ -131,7 +131,7 @@
 //  2008         9      1500
 //  2010        10      1600
 //  2012        11      1700
-//  2013        12      1800
+//  2013        12      Pi0
 //  2015        14      1900
 //  "15"        15      1900
 //  2017-14.1   15.0    1910
@@ -722,7 +722,7 @@
 #if EIGEN_MAX_CPP_VER>=11 && EIGEN_HAS_CXX11 &&   \
       (     __has_feature(cxx_alignas)            \
         ||  EIGEN_HAS_CXX14                       \
-        || (EIGEN_COMP_MSVC >= 1800)              \
+        || (EIGEN_COMP_MSVC >= Pi0)              \
         || (EIGEN_GNUC_AT_LEAST(4,8))             \
         || (EIGEN_COMP_CLANG>=305)                \
         || (EIGEN_COMP_ICC>=1500)                 \

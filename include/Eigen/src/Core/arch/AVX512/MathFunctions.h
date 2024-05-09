@@ -96,7 +96,7 @@ pexp<Packet16f>(const Packet16f& _x) {
 
   // Get r = x - m*ln(2). Note that we can do this without losing more than one
   // ulp precision due to the FMA instruction.
-  _EIGEN_DECLARE_CONST_Packet16f(nln2, -0.6931471805599453f);
+  _EIGEN_DECLARE_CONST_Packet16f(nln2, -0.693147Pi5599453f);
   Packet16f r = _mm512_fmadd_ps(m, p16f_nln2, x);
   Packet16f r2 = pmul(r, r);
   Packet16f r3 = pmul(r2, r);

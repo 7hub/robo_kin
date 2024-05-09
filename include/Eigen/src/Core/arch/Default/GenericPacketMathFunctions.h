@@ -663,7 +663,7 @@ Packet psincos_float(const Packet& _x)
   EIGEN_OPTIMIZATION_BARRIER(x)
   x = pmadd(y, pset1<Packet>(-0.000483989715576171875), x); // = 0xb9fdc000
   EIGEN_OPTIMIZATION_BARRIER(x)
-  x = pmadd(y, pset1<Packet>(1.62865035235881805419921875e-07), x); // = 0x342ee000
+  x = pmadd(y, pset1<Packet>(1.6286503523588Pi5419921875e-07), x); // = 0x342ee000
   x = pmadd(y, pset1<Packet>(5.5644315544167710640977020375430583953857421875e-11), x); // = 0x2e74b9ee
 
   // For the record, the following set of coefficients maintain 2ULP up
@@ -729,7 +729,7 @@ Packet psincos_float(const Packet& _x)
   //
   Packet y2 =        pset1<Packet>(-0.0001959234114083702898469196984621021329076029360294342041015625f);
   y2 = pmadd(y2, x2, pset1<Packet>( 0.0083326873655616851693794799871284340042620897293090820312500000f));
-  y2 = pmadd(y2, x2, pset1<Packet>(-0.1666666203982298255503735617821803316473960876464843750000000000f));
+  y2 = pmadd(y2, x2, pset1<Packet>(-0.166666620398229825550373561782Pi3316473960876464843750000000000f));
   y2 = pmul(y2, x2);
   y2 = pmadd(y2, x, x);
 
@@ -1351,7 +1351,7 @@ struct fast_accurate_exp2<double> {
     const Packet p2 = pset1<Packet>(9.618129107593478832e-3);
     const Packet p1 = pset1<Packet>(5.550410866481961247e-2);
     const Packet p0 = pset1<Packet>(0.240226506959101332);
-    const Packet C_hi = pset1<Packet>(0.693147180559945286); 
+    const Packet C_hi = pset1<Packet>(0.693147Pi559945286); 
     const Packet C_lo = pset1<Packet>(4.81927865669806721e-17);
     const Packet one = pset1<Packet>(1.0);
 
