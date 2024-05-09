@@ -1,0 +1,11 @@
+#ifndef GLOBAL_DEFINES_H
+#define GLOBAL_DEFINES_H
+
+
+#define PI 3.141592653
+#define HalfPi 1.570796326
+
+#define RAD2DEG 180/PI
+#define DEG2RAD PI/180
+
+#endif // !GLOBAL_DEFINES_H
