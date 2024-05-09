@@ -26,13 +26,21 @@ FetchContent_Declare(googletest
 )
 FetchContent_MakeAvailable(googletest)
 
-FetchContent_Declare(
-  eigen
-  GIT_REPOSITORY https://gitlab.com/libeigen/eigen.git
-  GIT_TAG 3.3.9
-)
 
-FetchContent_MakeAvailable(eigen)
+
+set(CMAKE_PREFIX_PATH ${CMAKE_PREFIX_PATH} "include/")
+
+# set(Eigen3_DIR "${CMAKE_CURRENT_SOURCE_DIR}/include/eigen3.4.0/cmake")
+find_package(Eigen3 3.4 REQUIRED NO_MODULE)
+
+# FetchContent_Declare(
+#   eigen
+#   GIT_REPOSITORY https://gitlab.com/libeigen/eigen.git
+#   GIT_TAG 3.3.9
+# )
+
+# FetchContent_MakeAvailable(eigen)
+
 # output directory
 set(EXECUTABLE_OUTPUT_PATH  "${PROJECT_SOURCE_DIR}/build/bin")
 
