@@ -77,5 +77,6 @@
         "valarray": "cpp",
         "variant": "cpp",
         "*.def": "cpp"
-    }
+    },
+    "C_Cpp.errorSquiggles": "disabled"
 }

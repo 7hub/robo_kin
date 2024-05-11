@@ -1,5 +1,6 @@
 #include "TX2_60.h"
 #include "global_defines.h"
+#include "mathHelper.h"
 
 // calc forward kinematics of 6-axis robot
 void TX2_60::fwd_kinemtaic(double q[6], double T[4][4])
@@ -85,4 +86,9 @@ void TX2_60::fwd_kinemtaic(double q[6], double T[4][4])
 // calc inverse kinematics of 6-axis robot
 void TX2_60::inv_kinematic()
 {
+}
+
+void TX2_60::T2pose(double T[4][4], double pose[6])
+{
+    robo_kin::T2pose(T, pose, robo_kin::EULER::XYZ);
 }

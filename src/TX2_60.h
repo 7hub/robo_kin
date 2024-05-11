@@ -46,9 +46,10 @@
 class TX2_60
 {
 public:
+    void fwd_kinemtaic(double q[6], double T[4][4]);
+    void inv_kinematic();
 
-    static void fwd_kinemtaic(double q[6], double T[4][4]);
-    static void inv_kinematic();
+    void T2pose(double T[4][4], double pose[6]);
 
 private:
 };

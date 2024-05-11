@@ -44,7 +44,7 @@ void print_HMItem(HomoMatrixItems hm)
     printf("| %.4f  %.4f  %.4f  %.4f | \n", hm.t41, hm.t42, hm.t43, hm.t44);
 }
 
-void print_HM(double ar[4][4], int row, int col)
+void print(double ar[4][4], int row, int col)
 {
     printf("Homogeneous Matrix: \n");
 	for (int i = 0; i < row; ++i)
@@ -57,3 +57,18 @@ void print_HM(double ar[4][4], int row, int col)
 	}
 	printf("\n");
 }
+
+void print(double q[], int size){
+    for(int i=0; i<size; i++){
+        printf("%4.4f ", q[i]);
+    }
+    printf("\n");
+}
+
+void print_vector(double v[], int size){
+    for(int i=0; i<size; i++){
+        printf("%4.4f ", v[i]);
+    }
+    printf("\n");
+}
+

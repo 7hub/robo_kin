@@ -22,6 +22,9 @@ void init_HM(int ar[][4], int row, int col);
 
 void print_HMItem(HomoMatrixItems hm);
 
-void print_HM(double ar[4][4], int row, int col);
+void print(double ar[4][4], int row, int col);
+
+void print(double q[], int size);
+void print_vector(double v[], int size);
 
 #endif // !GLOBAL_DEFINES_H
